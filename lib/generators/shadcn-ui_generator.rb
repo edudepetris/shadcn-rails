@@ -115,7 +115,7 @@ class ShadcnUiGenerator < Rails::Generators::Base
   end
 
   def check_for_tailwind
-    tailwind_file_path = File.join(target_rails_root, "app/assets/stylesheets/application.tailwind.css")
+    tailwind_file_path = File.join(target_rails_root, "app/assets/tailwind/application.css")
 
     if File.exist?(tailwind_file_path)
       true
